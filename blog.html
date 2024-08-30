@@ -54,9 +54,33 @@
             data-bs-parent="#accordionFlushExample"
           >
             <div class="accordion-body">
-              Placeholder content for this accordion, which is intended to
-              demonstrate the <code>.accordion-flush</code> class. This is the
-              first item's accordion body.
+              <code>var</code>:
+              <hr />
+
+              <small
+                >var is function scoped i.e. it is limited to function where it
+                is defined. It gets hoisted(moved to the top) and initialized
+                even before it is declared. Value can be reassigned anywhere
+                inside the function.</small
+              >
+              <br />
+              <br />
+              <code>let</code>:
+              <hr />
+              <small
+                >let is block scoped i.e. it is limited to the block where it is
+                declared. It does not get initialized before its declaration.
+                Value can be reassigned anywhere inside the block.</small
+              >
+              <br /><br />
+              <code>const</code>:<br />
+              <hr />
+              <small
+                >let is block scoped i.e. it is limited to the block where it is
+                declared. It does not get initialized before its declaration.
+                Once it is initialized with a value, the value can not be
+                reassigned.</small
+              >
             </div>
           </div>
         </div>
@@ -71,7 +95,7 @@
               aria-controls="flush-collapseTwo"
               style="font-weight: 500"
             >
-              Tell us the usecases of null and undefined!
+              Tell us the usecases of null and undefined
             </button>
           </h2>
           <div
@@ -80,10 +104,26 @@
             data-bs-parent="#accordionFlushExample"
           >
             <div class="accordion-body">
-              Placeholder content for this accordion, which is intended to
-              demonstrate the <code>.accordion-flush</code> class. This is the
-              second item's accordion body. Let's imagine this being filled with
-              some actual content.
+              <code>null</code>
+              <hr />
+              <small
+                >It is a special value which is intentionally used to represent
+                empty value. A variable can be initialized with null and later
+                it can be reassigned new value. Also null can be used to check
+                if something is missing or not.</small
+              >
+              <br /><br />
+              <code>undefined</code>
+              <hr />
+              <small
+                >It is also special value but it is unintentional. It indicates
+                that a variable has been declared but has not been assigned any
+                value to it yet. used to represent empty value. If A function
+                parameter is not passed when calling it, by default it becomes
+                undefined. Accessing an object property that do not exist will
+                give the result "undefined".</small
+              >
+              <br />
             </div>
           </div>
         </div>
@@ -98,7 +138,7 @@
               aria-controls="flush-collapseThree"
               style="font-weight: 500"
             >
-              What do you mean by REST API
+              What do you mean by REST API?
             </button>
           </h2>
           <div
@@ -107,12 +147,34 @@
             data-bs-parent="#accordionFlushExample"
           >
             <div class="accordion-body">
-              Placeholder content for this accordion, which is intended to
-              demonstrate the <code>.accordion-flush</code> class. This is the
-              third item's accordion body. Nothing more exciting happening here
-              in terms of content, but just filling up the space to make it
-              look, at least at first glance, a bit more representative of how
-              this would look in a real-world application.
+              <small>REST stands for Representational State Transfer</small
+              ><br />
+              <small>API stands for Application Programming Interface </small>
+              <br />
+              <hr />
+              <small>
+                REST API is a way for different applications to communicate with
+                each other over the internet with a set of rules and conventions
+                to make the communication standardized and easier. <br />
+                Different HTTP verbs are used to interact with each other.
+                <br />
+                <ul>
+                  <li class="unstyled-list">GET - retrieves information</li>
+                  <li class="unstyled-list">POST - adds a new data</li>
+                  <li class="unstyled-list">PUT/PATCH - updates data</li>
+                  <li class="unstyled-list">DELETE - removes data</li>
+                </ul>
+              </small>
+              <hr />
+              <small> These communications are done through URIs. </small><br />
+              <small>
+                URI stands for Uniform Resource Identifiers. These are like
+                addresses of the shared resources. </small
+              ><br />
+              <small
+                >for example:
+                <code>https://api.example.com/menu/biriyani</code></small
+              >
             </div>
           </div>
         </div>
